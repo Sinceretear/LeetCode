@@ -1,0 +1,16 @@
+var arr = [1,2,3,4,5,8,4,4]
+
+func reverse(arr: inout [Int], start: Int, end: Int) -> Void {
+    var start = start
+    var end = end
+    while(start < end) {
+        let temp = arr[start]
+        arr[start] = arr[end]
+        arr[end] = temp
+        start+=1
+        end-=1
+    }
+}
+reverse(arr: &arr, start: 0, end: arr.count - 1)
+
+print(arr)
