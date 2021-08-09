@@ -100,8 +100,6 @@ class LinkedList<T> {
     }
     
 }
-
-
 let myLL =  LinkedList(value: 0)
             myLL.append(value: 2)
             myLL.append(value: 3)
@@ -113,7 +111,5 @@ let myLL =  LinkedList(value: 0)
             myLL.insert(pos: 1, value: 9)
 
 myLL.print()
-
-
 
 //Learning about Linked Lists
