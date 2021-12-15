@@ -1,0 +1,18 @@
+class Solution {
+    func subtractProductAndSum(_ n: Int) -> Int {
+        
+        //do not start this at 0 because your product result will be 0
+        var productOfDigs = 1
+        var sumOfDigs = 0
+        
+        //create array of nums
+        let arr = String(n).compactMap{ $0.wholeNumberValue }
+        
+        for num in arr {
+            productOfDigs *= num
+            sumOfDigs += num
+        }
+        
+        return productOfDigs - sumOfDigs
+    }
+}
